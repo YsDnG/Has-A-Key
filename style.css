@@ -306,8 +306,12 @@ footerLayerAuthor {
 
 @media only screen and (max-width: 750px){
   
-    .headerContent , .headerTop{
+    .headerContent , .headerTop , .headerTop ul{
         flex-wrap: wrap;
+        flex:0 0 auto;
+    }
+    .headerContent p{
+        font-size: 0.8em;
     }
     button{
         width: 1em;
@@ -316,11 +320,6 @@ footerLayerAuthor {
     a{
         font-size: 0.5em;
     }
-   
-    .section{
-        flex-shrink: 1;
-    }
-
 
 }
 
