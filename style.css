@@ -72,7 +72,7 @@ p{
 }
 
 .headerContent{
-    display: flex ;
+    display: flex;
     gap: 16px;
     padding: 16px 10%;
     margin: 16px;
@@ -80,14 +80,12 @@ p{
     }
 .headerContent h1{
    
-    font-size: 48px;
+    font-size: 2vw;
     font-weight: bold;
     margin: 0;
-   
-  
-
 }    
 .headerContent p{
+    font-size: 1vw;
     margin: 0;
 }
 .section {
@@ -96,13 +94,11 @@ p{
     gap: 3em;
     justify-content: center;
     align-items: center;
-   
-}
-.headerContent *{
-    flex: auto;
+    flex: 2;
 }
 .aside{
     display: flex;
+    flex: 1;
     justify-content: center;
    
 
