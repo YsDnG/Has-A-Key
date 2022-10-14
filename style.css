@@ -27,7 +27,6 @@ body{
     align-items: center;
     z-index: -2;
     color: rgb(85,26,139);
-   
 }
 header{
         margin-bottom: 9em;
@@ -36,7 +35,7 @@ header{
         margin-top: 5em;
         opacity: 0.7;
         border-radius: 10px;
-    
+        overflow: hidden;
 }
 .placeholderImg
 {
@@ -46,13 +45,13 @@ header{
 .headerTop
 {
     display: flex ;
-    flex: 1;
     align-items: center;
-    justify-content: space-between;
-    padding: 16px 10%;
+    justify-content: space-around;
+    padding: 1em 1em;
     font-family: moralist ;
     
 }
+
 .headerTop h1 {
     font-size: 32px;
     font-weight: bold;
@@ -70,12 +69,10 @@ p{
     margin: 0;
 
 }
-
 .headerContent{
-    display: flex;
-    gap: 16px;
-    padding: 16px 10%;
-    margin: 16px;
+    display: flex; 
+    gap: 2em;
+     padding: 0 5em ; 
 
     }
 .headerContent h1{
@@ -85,7 +82,7 @@ p{
     margin: 0;
 }    
 .headerContent p{
-    font-size: 1vw;
+    font-size: 0.9vw;
     margin: 0;
 }
 .section {
@@ -94,13 +91,14 @@ p{
     gap: 3em;
     justify-content: center;
     align-items: center;
-    flex: 2;
+    flex:1;
 }
 .aside{
     display: flex;
-    flex: 1;
+    width: 50em;
+    flex:0 2 auto;
     justify-content: center;
-   
+    padding: 2em;
 
 }
 .headerImg{
@@ -113,7 +111,7 @@ p{
 
 ul {
     display: flex;
-    gap: 10px;
+    gap: 0.2em;
 }
 
  li{
@@ -304,6 +302,26 @@ footerLayerAuthor {
     font-size: 0.8em;
     margin-top: 0.5em;
     font-family: night;
+}
+
+@media only screen and (max-width: 750px){
+  
+    .headerContent , .headerTop{
+        flex-wrap: wrap;
+    }
+    button{
+        width: 1em;
+        height: 1em;
+    }
+    a{
+        font-size: 0.5em;
+    }
+   
+    .section{
+        flex-shrink: 1;
+    }
+
+
 }
 
  
