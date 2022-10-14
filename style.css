@@ -1,0 +1,316 @@
+@font-face {
+    font-family: night;
+    src: url("./font/webfontkit-20221012-122135/nightmarepills-bv2w-webfont.woff");
+    
+}
+@font-face {
+    font-family: cutive;
+    src: url("./font/Cutive/Cutive-Regular.ttf");
+}
+
+@font-face {
+    font-family: moralist;
+    src: url("./font/moralist-sans-cdnfonts/Moralist\ Sans.otf");
+}
+body{
+    min-height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: top;
+    background-image: url('./Img/Ionia_LoR_Background');
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+    color: rgb(85,26,139);
+   
+}
+header{
+        margin-bottom: 9em;
+        background-image: linear-gradient(90deg, rgb(202, 239, 215) 0%, rgb(245, 191, 215) 50%, rgb(171, 201, 233) 100%);
+        width: 80%;
+        margin-top: 5em;
+        opacity: 0.7;
+        border-radius: 10px;
+    
+}
+.placeholderImg
+{
+    border-radius: 10px;
+}
+
+.headerTop
+{
+    display: flex ;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 10%;
+    font-family: moralist ;
+    
+}
+.headerTop h1 {
+    font-size: 32px;
+    font-weight: bold;
+    
+    
+}
+h3{
+    font-size: 18px;
+    font-weight:bold;
+   
+    margin: 0;
+    
+}
+p{
+    margin: 0;
+
+}
+
+.headerContent{
+    display: flex ;
+    gap: 16px;
+    padding: 16px 10%;
+    margin: 16px;
+
+    }
+.headerContent h1{
+   
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+   
+  
+
+}    
+.headerContent p{
+    margin: 0;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+   
+}
+.headerContent *{
+    flex: auto;
+}
+.aside{
+    display: flex;
+    justify-content: center;
+   
+
+}
+.headerImg{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    
+
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+ li{
+    list-style-type: none;
+}
+
+ a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.headerTop a:hover{
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 25%
+}
+
+    button{
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 100px;
+      align-items: center;
+      appearance: none;
+      background-color: #2551b8;
+      background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+      background-size: calc(100% + 20px) calc(100% + 20px);
+      border-radius: 100px;
+      border-width: 0;
+      box-shadow: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: CircularStd,sans-serif;
+      font-size: 1rem;
+      height: auto;
+      justify-content: center;
+      line-height: 1.5;
+      padding: 6px 20px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color .2s,background-position .2s;
+     
+    }
+    button:active,
+    button:focus {
+      outline: none;
+    }
+    button:hover {
+      background-position: -20px -20px;
+    }
+    button:focus:not(:active) {
+      box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+    } 
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+ .content-top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    background-position: top;
+    background-image: url('./Img/006f8wK2gy1ggitql5pk0j31ev0u04qs.jpg');
+    background-size: cover;
+    z-index: -1;
+    object-fit: cover;
+    background-attachment: fixed;
+    margin-bottom: 9em;
+    padding: 4.5em;
+    color: aliceblue;
+    font-size: 18px;
+
+ }
+ 
+ 
+ .content-list{
+    display: flex;
+    flex-shrink: 0;
+    gap: 1em;
+    text-align: center;  
+    
+    flex-wrap: wrap;
+ }
+ .content-top-img{
+    flex: auto;
+
+ }
+ .content-top-img img{
+    /* position: relative; */
+    width: 400px;
+    height: 200px;
+    border-style: solid;
+    border-image: linear-gradient(  to left, #b9c4d4, #8f9aaa, #677281, #424c5b, #1f2937) 1;
+    border-width: 5px;
+    border-radius: 5px;
+    /* animation: pulseImg 2s infinite; */
+ }
+
+ @keyframes pulseImg {
+
+    to{
+        box-shadow: 0 0 0 10px red;
+    }
+ }
+ 
+
+     
+
+ .content-top h1{
+    margin: 20px;
+    border-radius: 50%;
+    padding: 1em;
+    font-size: 32px;
+    font-weight: bold;
+    color: #f9faf8;
+
+ }
+
+ .quote{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, rgb(202, 239, 215) 0%, rgb(245, 191, 215) 50%, rgb(171, 201, 233) 100%);
+    opacity: 0.7;
+    font-family: night;
+    color:#2551b8;
+    font-size: 34px; 
+    border-radius: 8px;
+    margin-bottom: 5em;
+    width: 80%;
+    height: 15em;
+ }
+ .yasuo-quote{
+    background:linear-gradient(to right ,rgba(255,255,255,0.5),rgba(0,0 ,0,0.5));
+ }
+ .quote p{
+    margin: 20px;
+    color: #1f2937;
+ }
+
+ .content-bot{
+    flex: auto;
+    background-image: linear-gradient(80deg, rgb(202, 239, 215) 0%, rgb(245, 191, 215) 50%, rgb(171, 201, 233) 100%);
+    width: 60%;
+    height: 5em;
+    border-radius: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+ }
+ .content-bot-text{
+    background:linear-gradient(to right ,rgba(255,255,255,0.5),rgba(0,0 ,0,0.5));
+ }
+ .content-bot-text p{
+    margin: 4px;
+ }
+
+ footer{
+    margin-top: 150px;
+    width: 100%;
+ }
+
+ .footerLayerBg {
+    background: rgb(19, 25, 41);
+    padding: 1.25em 0;
+    box-shadow: 0 0 1em rgb(0 0 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footerLayerAuthor {
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    font-family: night;
+}
+
+ 
+    
+
+    
