@@ -12,7 +12,9 @@
     font-family: moralist;
     src: url("./font/moralist-sans-cdnfonts/Moralist\ Sans.otf");
 }
+
 body{
+    min-width: 100%;
     min-height: 100vh;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -25,6 +27,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     z-index: -2;
     color: rgb(85,26,139);
 }
@@ -45,6 +48,7 @@ header{
 .headerTop
 {
     display: flex ;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 1em 1em;
@@ -53,7 +57,7 @@ header{
 }
 
 .headerTop h1 {
-    font-size: 32px;
+    font-size: 2.2em;
     font-weight: bold;
     
     
@@ -61,12 +65,14 @@ header{
 h3{
     font-size: 18px;
     font-weight:bold;
-   
     margin: 0;
     
 }
 p{
-    margin: 0;
+        margin-top: 1em;
+        font-size: 1.1em;
+        line-height: 1.4em;
+        margin: 0;
 
 }
 .headerContent{
@@ -76,9 +82,9 @@ p{
 
     }
 .headerContent h1{
-   
-    font-size: 2vw;
-    font-weight: bold;
+    color: #f9faf8;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    font-size: 2.2em;
     margin: 0;
 }    
 .headerContent p{
@@ -96,8 +102,9 @@ p{
 .aside{
     display: flex;
     width: 50em;
-    flex:0 2 auto;
-    justify-content: center;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
     padding: 2em;
 
 }
@@ -111,7 +118,7 @@ p{
 
 ul {
     display: flex;
-    gap: 0.2em;
+    gap: 0.2em;rgb(85,26,139);
 }
 
  li{
@@ -178,7 +185,7 @@ img{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 36px;
     display: flex;
@@ -186,7 +193,7 @@ img{
     background-position: top;
     background-image: url('./Img/006f8wK2gy1ggitql5pk0j31ev0u04qs.jpg');
     background-size: cover;
-    z-index: -1;
+    z-index: -2;
     object-fit: cover;
     background-attachment: fixed;
     margin-bottom: 9em;
@@ -199,11 +206,15 @@ img{
  
  .content-list{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
     gap: 1em;
     text-align: center;  
-    
     flex-wrap: wrap;
+ }
+ .content-list p{
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;0 0);
  }
  .content-top-img{
     flex: auto;
@@ -237,6 +248,7 @@ img{
     font-size: 32px;
     font-weight: bold;
     color: #f9faf8;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 
  }
 
@@ -256,7 +268,7 @@ img{
     height: 15em;
  }
  .yasuo-quote{
-    background:linear-gradient(to right ,rgba(255,255,255,0.5),rgba(0,0 ,0,0.5));
+    text-shadow: 2px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
  }
  .quote p{
     margin: 20px;
@@ -273,10 +285,12 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    color: #f9faf8;
  }
  .content-bot-text{
-    background:linear-gradient(to right ,rgba(255,255,255,0.5),rgba(0,0 ,0,0.5));
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
+    
  }
  .content-bot-text p{
     margin: 4px;
@@ -305,13 +319,21 @@ footerLayerAuthor {
 }
 
 @media only screen and (max-width: 750px){
+
+
   
-    .headerContent , .headerTop , .headerTop ul{
-        flex-wrap: wrap;
-        flex:0 0 auto;
+    .headerContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
-    .headerContent p{
-        font-size: 0.8em;
+
+    .section{
+        width: 65vm;
+    }
+    .aside img{
+       width: 60vw;
     }
     button{
         width: 1em;
@@ -319,6 +341,15 @@ footerLayerAuthor {
     }
     a{
         font-size: 0.5em;
+    }
+    .section{
+        margin-top: 4em;
+    }
+    .section p {
+        margin-top: 1em;
+        font-size: 1.1em;
+        line-height: 1.4em;
+        text-align: justify;
     }
 
 }
