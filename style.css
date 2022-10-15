@@ -218,6 +218,7 @@ img{
  
  .content-list{
     display: flex;
+    box-sizing: content-box;
     flex-shrink: 0;
     gap: 1em;
     text-align: center;  
@@ -279,6 +280,7 @@ img{
     
  }
  .yasuo-quote{
+    box-sizing: content-box;
     width: 60%;
     text-shadow: 2px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
  }
@@ -301,6 +303,7 @@ img{
     box-shadow: 50px 50px 100px black, 0 0 3em white, 0 0 3em red;
  }
  .content-bot-text{
+    box-sizing: content-box;
     width: 80%;
     text-align: center;
     padding: 1.25em 0;
