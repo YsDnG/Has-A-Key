@@ -14,8 +14,7 @@
 }
 
 body{
-    min-width: 100%;
-    min-height: 100vh;
+    width: 100%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
@@ -27,8 +26,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    z-index: -2;
     color: rgb(85,26,139);
 }
 header{
@@ -39,6 +36,7 @@ header{
         opacity: 0.7;
         border-radius: 10px;
         overflow: hidden;
+        box-shadow: 50px 50px 100px black, 0 0 3em white, 0 0 3em red;
 }
 .placeholderImg
 {
@@ -59,7 +57,6 @@ header{
 .headerTop h1 {
     font-size: 2.2em;
     font-weight: bold;
-    
     
 }
 h3{
@@ -118,7 +115,8 @@ p{
 
 ul {
     display: flex;
-    gap: 0.2em;rgb(85,26,139);
+    gap: 0.2em;
+    color :rgb(85,26,139);
 }
 
  li{
@@ -126,21 +124,33 @@ ul {
 }
 
  a{
-    font-size: 18px;
+    font-size: 1em;
     text-decoration: none;
     font-weight: 700;
 }
-.headerTop a:hover{
-    padding: 10px;
+ .headerTop a:hover{
+    padding: 1em;
     background-color: aliceblue;
     border: 1px solid black;
     border-radius: 25%
 }
+.footer a {
+    font-size: 1.5em;
+}
+.footer a:hover{
+    background-image: linear-gradient(90deg, rgb(202, 239, 215) 0%, rgb(245, 191, 215) 50%, rgb(171, 201, 233) 100%);
+    border: 1px solid black;
+    
+    padding: 0 1em;
+
+}
 
     button{
+      padding: 1.25em 0;
       flex-grow: 0;
       flex-shrink: 0;
-      width: 100px;
+      width: 7em;
+      height: 1em;
       align-items: center;
       appearance: none;
       background-color: #2551b8;
@@ -154,15 +164,16 @@ ul {
       cursor: pointer;
       display: inline-flex;
       font-family: CircularStd,sans-serif;
-      font-size: 1rem;
+      font-size: 1em;
       height: auto;
       justify-content: center;
-      line-height: 1.5;
-      padding: 6px 20px;
+      line-height: 0.5em;
+      
       position: relative;
       text-align: center;
       text-decoration: none;
       transition: background-color .2s,background-position .2s;
+      margin: 1em;
      
     }
     button:active,
@@ -183,11 +194,12 @@ img{
 
  .content-top{
     width: 100%;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 36px;
+    gap: 5em;
     display: flex;
     flex-direction: column;
     background-position: top;
@@ -199,42 +211,41 @@ img{
     margin-bottom: 9em;
     padding: 4.5em;
     color: aliceblue;
-    font-size: 18px;
+    font-size: 1.2em;
 
  }
  
  
  .content-list{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-shrink: 0;
     gap: 1em;
     text-align: center;  
     flex-wrap: wrap;
+    
  }
  .content-list p{
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;0 0);
+    font-size: 0.9em;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
  }
  .content-top-img{
     flex: auto;
 
  }
  .content-top-img img{
-    /* position: relative; */
-    width: 400px;
-    height: 200px;
+    width: 25rem;
+    height: 12.5rem;
     border-style: solid;
     border-image: linear-gradient(  to left, #b9c4d4, #8f9aaa, #677281, #424c5b, #1f2937) 1;
     border-width: 5px;
     border-radius: 5px;
-    /* animation: pulseImg 2s infinite; */
+      animation: pulseImg 3s infinite;  
  }
 
  @keyframes pulseImg {
 
     to{
-        box-shadow: 0 0 0 10px red;
+        box-shadow:  0 0 3em black, 0 0 3em white, 0 0 3em wheat;
     }
  }
  
@@ -242,7 +253,6 @@ img{
      
 
  .content-top h1{
-    margin: 20px;
     border-radius: 50%;
     padding: 1em;
     font-size: 32px;
@@ -253,6 +263,7 @@ img{
  }
 
  .quote{
+    
     display: flex;
     text-align: center;
     align-items: center;
@@ -260,63 +271,69 @@ img{
     background-image: linear-gradient(90deg, rgb(202, 239, 215) 0%, rgb(245, 191, 215) 50%, rgb(171, 201, 233) 100%);
     opacity: 0.7;
     font-family: night;
-    color:#2551b8;
-    font-size: 34px; 
+    font-size: 1.6em; 
     border-radius: 8px;
     margin-bottom: 5em;
-    width: 80%;
-    height: 15em;
+    padding: 3em ;
+    box-shadow: 50px 50px 100px black, 0 0 3em white, 0 0 3em red;
+    
  }
  .yasuo-quote{
+    width: 60%;
     text-shadow: 2px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
  }
  .quote p{
-    margin: 20px;
+    margin: 0.5em;
+    font-size: 0.9em;
     color: #1f2937;
  }
 
  .content-bot{
     flex: auto;
     background-image: linear-gradient(80deg, rgb(202, 239, 215) 0%, rgb(245, 191, 215) 50%, rgb(171, 201, 233) 100%);
-    width: 60%;
-    height: 5em;
+    opacity: 0.7;
     border-radius: 10px;
-    margin: 50px;
+    margin: 5em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #f9faf8;
+    box-shadow: 50px 50px 100px black, 0 0 3em white, 0 0 3em red;
  }
  .content-bot-text{
+    width: 80%;
+    text-align: center;
+    padding: 1.25em 0;
+    margin: 0 3em;
+    font-size: 0.9em;
+    margin: 1em;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-
-    
  }
- .content-bot-text p{
-    margin: 4px;
- }
+ 
 
  footer{
-    margin-top: 150px;
     width: 100%;
+    font-family: night;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    opacity: 0.7;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 0.5em;
  }
 
- .footerLayerBg {
-    background: rgb(19, 25, 41);
+ .footer {
+    color: #1f2937;
+    background: rgb(0, 0, 0);
     padding: 1.25em 0;
+    margin: 1em;
     box-shadow: 0 0 1em rgb(0 0 0);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-footerLayerAuthor {
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    margin-top: 0.5em;
-    font-family: night;
-}
+
 
 @media only screen and (max-width: 750px){
 
@@ -330,22 +347,36 @@ footerLayerAuthor {
     }
 
     .section{
-        width: 65vm;
+        width: 65vw;
     }
     .aside img{
        width: 60vw;
     }
     button{
-        width: 1em;
+        margin: 1em;
+        font-size: 1.4em;
+        line-height: 0.5em;
+        text-align: justify;
+        width: 7em;
         height: 1em;
     }
     a{
         font-size: 0.5em;
     }
+    .content-bot{
+        justify-content: center;
+    }
     .section{
         margin-top: 4em;
     }
     .section p {
+        margin-top: 1em;
+        font-size: 1.1em;
+        line-height: 1.4em;
+        text-align: justify;
+    }
+
+    .quote p{
         margin-top: 1em;
         font-size: 1.1em;
         line-height: 1.4em;
