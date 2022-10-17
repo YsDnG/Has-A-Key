@@ -245,7 +245,6 @@ ul {
     color: aliceblue;
     font-size: 1.2em;
     z-index: 1;
-    
     display: flex;
     flex-shrink: 0;
     text-align: center;  
